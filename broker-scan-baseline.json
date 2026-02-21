@@ -1,0 +1,596 @@
+{
+  "apex.py|brokerId|6bb0282a7118": {
+    "file": "apex.py",
+    "line": 244,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': '6956',"
+  },
+  "apex.py|brokerId|b5dfa5b08473": {
+    "file": "apex.py",
+    "line": 1360,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': self.safe_string(self.options, 'brokerId', '6956'),"
+  },
+  "backpack.py|brokerId|fbb2e82e855c": {
+    "file": "backpack.py",
+    "line": 412,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': '',"
+  },
+  "binance.py|brokerId|b4a470e45cfc": {
+    "file": "binance.py",
+    "line": 5172,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(broker, 'spot')"
+  },
+  "binance.py|brokerId|9bc01f4a34b9": {
+    "file": "binance.py",
+    "line": 5173,
+    "keyword": "brokerId",
+    "snippet": "if brokerId is not None:"
+  },
+  "binance.py|brokerId|e001862f6f3c": {
+    "file": "binance.py",
+    "line": 5174,
+    "keyword": "brokerId",
+    "snippet": "request['newClientOrderId'] = brokerId + self.uuid22()"
+  },
+  "binance.py|brokerId|ccc8948a7c6a": {
+    "file": "binance.py",
+    "line": 6338,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(broker, idMarketType, defaultId)"
+  },
+  "binance.py|brokerId|015c5c015ec9": {
+    "file": "binance.py",
+    "line": 6339,
+    "keyword": "brokerId",
+    "snippet": "request[clientOrderIdRequest] = brokerId + self.uuid22()"
+  },
+  "binance.py|brokerId|6303b828d9a2": {
+    "file": "binance.py",
+    "line": 11404,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(broker, marketType, defaultId)"
+  },
+  "binance.py|brokerId|0da83c11be16": {
+    "file": "binance.py",
+    "line": 11405,
+    "keyword": "brokerId",
+    "snippet": "params['newClientOrderId'] = brokerId + self.uuid22()"
+  },
+  "binance.py|brokerId|6372e4874dd5": {
+    "file": "binance.py",
+    "line": 11420,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(broker, 'future', defaultId)"
+  },
+  "binance.py|brokerId|662045ff35fc": {
+    "file": "binance.py",
+    "line": 11421,
+    "keyword": "brokerId",
+    "snippet": "newClientOrderId = brokerId + self.uuid22()"
+  },
+  "bingx.py|X-SOURCE-KEY|8f6fcff3bc62": {
+    "file": "bingx.py",
+    "line": 6460,
+    "keyword": "X-SOURCE-KEY",
+    "snippet": "'X-SOURCE-KEY': self.safe_string(self.options, 'broker', 'CCXT'),"
+  },
+  "bitget.py|X-CHANNEL-API-CODE|d40a7becef20": {
+    "file": "bitget.py",
+    "line": 10528,
+    "keyword": "X-CHANNEL-API-CODE",
+    "snippet": "'X-CHANNEL-API-CODE': broker,"
+  },
+  "bitmart.py|brokerId|aa97bbc41809": {
+    "file": "bitmart.py",
+    "line": 732,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'CCXTxBitmart000',"
+  },
+  "bitmart.py|brokerId|ff3e0bfe7513": {
+    "file": "bitmart.py",
+    "line": 5318,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId', 'CCXTxBitmart000')"
+  },
+  "bitmart.py|brokerId|642be3b867df": {
+    "file": "bitmart.py",
+    "line": 5322,
+    "keyword": "brokerId",
+    "snippet": "'X-BM-BROKER-ID': brokerId,"
+  },
+  "bitmart.py|X-BM-BROKER-ID|642be3b867df": {
+    "file": "bitmart.py",
+    "line": 5322,
+    "keyword": "X-BM-BROKER-ID",
+    "snippet": "'X-BM-BROKER-ID': brokerId,"
+  },
+  "bitmex.py|brokerId|4e6eb27d648f": {
+    "file": "bitmex.py",
+    "line": 2034,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId', 'CCXT')"
+  },
+  "bitmex.py|brokerId|18bd8b391264": {
+    "file": "bitmex.py",
+    "line": 1948,
+    "keyword": "brokerId",
+    "snippet": "'text': brokerId,"
+  },
+  "bitmex.py|brokerId|209b9f34729b": {
+    "file": "bitmex.py",
+    "line": 2035,
+    "keyword": "brokerId",
+    "snippet": "request['text'] = brokerId"
+  },
+  "bittrade.py|brokerId|d2d4a7271d0b": {
+    "file": "bittrade.py",
+    "line": 1425,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(broker, 'id')"
+  },
+  "bittrade.py|brokerId|2d960b56b607": {
+    "file": "bittrade.py",
+    "line": 1426,
+    "keyword": "brokerId",
+    "snippet": "request['client-order-id'] = brokerId + self.uuid()"
+  },
+  "blofin.py|referral_code|9717d5bb25e4": {
+    "file": "blofin.py",
+    "line": 175,
+    "keyword": "referral_code",
+    "snippet": "'url': 'https://blofin.com/register?referral_code=f79EsS',"
+  },
+  "blofin.py|brokerId|1b3ffd06b4ec": {
+    "file": "blofin.py",
+    "line": 412,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'ec6dd3a7dd982d0b',"
+  },
+  "blofin.py|brokerId|ad5bde90b139": {
+    "file": "blofin.py",
+    "line": 1396,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': self.safe_string(self.options, 'brokerId', 'ec6dd3a7dd982d0b'),"
+  },
+  "bybit.py|brokerId|9c27a1ade366": {
+    "file": "bybit.py",
+    "line": 1120,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'CCXT',"
+  },
+  "bybit.py|brokerId|d1932c28b860": {
+    "file": "bybit.py",
+    "line": 9056,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId')"
+  },
+  "bybit.py|brokerId|9bc01f4a34b9": {
+    "file": "bybit.py",
+    "line": 9057,
+    "keyword": "brokerId",
+    "snippet": "if brokerId is not None:"
+  },
+  "bybit.py|brokerId|4f8d960520e0": {
+    "file": "bybit.py",
+    "line": 9058,
+    "keyword": "brokerId",
+    "snippet": "headers['Referer'] = brokerId"
+  },
+  "coinbase.py|brokerId|03abdabd1f41": {
+    "file": "coinbase.py",
+    "line": 400,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'ccxt',"
+  },
+  "coinbase.py|brokerId|a5dc89bcd2a4": {
+    "file": "coinbase.py",
+    "line": 2898,
+    "keyword": "brokerId",
+    "snippet": "id = self.safe_string(self.options, 'brokerId', 'ccxt')"
+  },
+  "coinbaseinternational.py|brokerId|c8cab2148d78": {
+    "file": "coinbaseinternational.py",
+    "line": 251,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'nfqkvdjp',"
+  },
+  "coinbaseinternational.py|brokerId|e9ded966b71a": {
+    "file": "coinbaseinternational.py",
+    "line": 1669,
+    "keyword": "brokerId",
+    "snippet": "clientOrderIdprefix = self.safe_string(self.options, 'brokerId', 'nfqkvdjp')"
+  },
+  "coincatch.py|brokerId|ffef0e53c073": {
+    "file": "coincatch.py",
+    "line": 290,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': '47cfy',"
+  },
+  "coincatch.py|brokerId|02e830737545": {
+    "file": "coincatch.py",
+    "line": 5175,
+    "keyword": "brokerId",
+    "snippet": "'X-CHANNEL-API-CODE': self.safe_string(self.options, 'brokerId', '47cfy'),"
+  },
+  "coincatch.py|X-CHANNEL-API-CODE|02e830737545": {
+    "file": "coincatch.py",
+    "line": 5175,
+    "keyword": "X-CHANNEL-API-CODE",
+    "snippet": "'X-CHANNEL-API-CODE': self.safe_string(self.options, 'brokerId', '47cfy'),"
+  },
+  "coinex.py|brokerId|58c019672521": {
+    "file": "coinex.py",
+    "line": 477,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'x-167673045',"
+  },
+  "coinex.py|brokerId|c4802f25c786": {
+    "file": "coinex.py",
+    "line": 2149,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId', defaultId)"
+  },
+  "coinex.py|brokerId|a2a843375cc6": {
+    "file": "coinex.py",
+    "line": 2150,
+    "keyword": "brokerId",
+    "snippet": "request['client_id'] = brokerId + '-' + self.uuid16()"
+  },
+  "coinex.py|brokerId|296f463ee502": {
+    "file": "coinex.py",
+    "line": 5844,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_value(self.options, 'brokerId', defaultId)"
+  },
+  "coinex.py|brokerId|d4d78990475b": {
+    "file": "coinex.py",
+    "line": 5845,
+    "keyword": "brokerId",
+    "snippet": "query['client_id'] = brokerId + '_' + self.uuid16()"
+  },
+  "cryptocom.py|broker_id|b523d86ca461": {
+    "file": "cryptocom.py",
+    "line": 1516,
+    "keyword": "broker_id",
+    "snippet": "request['broker_id'] = broker"
+  },
+  "derive.py|referral_code|f7490dc2edc7": {
+    "file": "derive.py",
+    "line": 1232,
+    "keyword": "referral_code",
+    "snippet": "'referral_code': self.safe_string(self.options, 'id', '0x0ad42b8e602c2d3d475ae52d678cf63d84ab2749'),"
+  },
+  "hashkey.py|INPUT-SOURCE|91316be190f1": {
+    "file": "hashkey.py",
+    "line": 4161,
+    "keyword": "INPUT-SOURCE",
+    "snippet": "headers['INPUT-SOURCE'] = self.safe_string(self.options, 'broker', '10000700011')"
+  },
+  "hashkey.py|broker_sign|efc206e1c225": {
+    "file": "hashkey.py",
+    "line": 4162,
+    "keyword": "broker_sign",
+    "snippet": "headers['broker_sign'] = signature"
+  },
+  "htx.py|brokerId|d2d4a7271d0b": {
+    "file": "htx.py",
+    "line": 5265,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(broker, 'id')"
+  },
+  "htx.py|brokerId|2d960b56b607": {
+    "file": "htx.py",
+    "line": 5141,
+    "keyword": "brokerId",
+    "snippet": "request['client-order-id'] = brokerId + self.uuid()"
+  },
+  "htx.py|brokerId|360332b58a3f": {
+    "file": "htx.py",
+    "line": 5266,
+    "keyword": "brokerId",
+    "snippet": "request['channel_code'] = brokerId"
+  },
+  "hyperliquid.py|setReferrer|63336f2c8177": {
+    "file": "hyperliquid.py",
+    "line": 1676,
+    "keyword": "setReferrer",
+    "snippet": "'type': 'setReferrer',"
+  },
+  "hyperliquid.py|approveBuilderFee|e55734e238bd": {
+    "file": "hyperliquid.py",
+    "line": 1710,
+    "keyword": "approveBuilderFee",
+    "snippet": "'type': 'approveBuilderFee',"
+  },
+  "hyperliquid.py|builderFee|a75adcd8bea3": {
+    "file": "hyperliquid.py",
+    "line": 1736,
+    "keyword": "builderFee",
+    "snippet": "buildFee = self.safe_bool(self.options, 'builderFee', True)"
+  },
+  "hyperliquid.py|builderFee|444dbddc222e": {
+    "file": "hyperliquid.py",
+    "line": 1748,
+    "keyword": "builderFee",
+    "snippet": "self.options['builderFee'] = False  # disable builder fee if an error occurs"
+  },
+  "kucoin.py|KC-API-PARTNER|9d123695228d": {
+    "file": "kucoin.py",
+    "line": 5539,
+    "keyword": "KC-API-PARTNER",
+    "snippet": "headers['KC-API-PARTNER-SIGN'] = partnerSignature"
+  },
+  "kucoin.py|KC-API-PARTNER|e8a226f252f3": {
+    "file": "kucoin.py",
+    "line": 5540,
+    "keyword": "KC-API-PARTNER",
+    "snippet": "headers['KC-API-PARTNER'] = partnerId"
+  },
+  "kucoin.py|KC-API-PARTNER|637bc9c0fcfb": {
+    "file": "kucoin.py",
+    "line": 5541,
+    "keyword": "KC-API-PARTNER",
+    "snippet": "headers['KC-API-PARTNER-VERIFY'] = 'true'"
+  },
+  "modetrade.py|broker_id|6ea36a5cc789": {
+    "file": "modetrade.py",
+    "line": 156,
+    "keyword": "broker_id",
+    "snippet": "'public/chain_info/{broker_id}': 1,"
+  },
+  "modetrade.py|brokerId|2a9cb3734dc9": {
+    "file": "modetrade.py",
+    "line": 301,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'CCXTMODE',"
+  },
+  "modetrade.py|brokerId|77ff956fb70e": {
+    "file": "modetrade.py",
+    "line": 2463,
+    "keyword": "brokerId",
+    "snippet": "{'name': 'brokerId', 'type': 'string'},"
+  },
+  "modetrade.py|brokerId|454131a8e731": {
+    "file": "modetrade.py",
+    "line": 2473,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': self.safe_string(self.options, 'keyBrokerId', 'mode'),"
+  },
+  "modetrade.py|brokerId|1e0d2c8f42ec": {
+    "file": "modetrade.py",
+    "line": 2767,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId', 'CCXTMODE')"
+  },
+  "modetrade.py|brokerId|a608c113e499": {
+    "file": "modetrade.py",
+    "line": 2771,
+    "keyword": "brokerId",
+    "snippet": "params['orders'][i]['order_tag'] = brokerId"
+  },
+  "modetrade.py|brokerId|33a860e82ad6": {
+    "file": "modetrade.py",
+    "line": 2773,
+    "keyword": "brokerId",
+    "snippet": "params['order_tag'] = brokerId"
+  },
+  "okx.py|brokerId|15a04cb2acec": {
+    "file": "okx.py",
+    "line": 1310,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': '6b9ad766b55dBCDE',"
+  },
+  "okx.py|brokerId|d1932c28b860": {
+    "file": "okx.py",
+    "line": 3198,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId')"
+  },
+  "okx.py|brokerId|9bc01f4a34b9": {
+    "file": "okx.py",
+    "line": 3199,
+    "keyword": "brokerId",
+    "snippet": "if brokerId is not None:"
+  },
+  "okx.py|brokerId|3fd508aef5f0": {
+    "file": "okx.py",
+    "line": 3200,
+    "keyword": "brokerId",
+    "snippet": "request['clOrdId'] = brokerId + self.uuid16()"
+  },
+  "okx.py|brokerId|b9c86c474de5": {
+    "file": "okx.py",
+    "line": 3201,
+    "keyword": "brokerId",
+    "snippet": "request['tag'] = brokerId"
+  },
+  "okx.py|brokerId|656027b6692d": {
+    "file": "okx.py",
+    "line": 6160,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId', '6b9ad766b55dBCDE')"
+  },
+  "okx.py|brokerId|c0de4096e84f": {
+    "file": "okx.py",
+    "line": 6166,
+    "keyword": "brokerId",
+    "snippet": "entry['clOrdId'] = brokerId + self.uuid16()"
+  },
+  "okx.py|brokerId|a57e49cc41bf": {
+    "file": "okx.py",
+    "line": 6167,
+    "keyword": "brokerId",
+    "snippet": "entry['tag'] = brokerId"
+  },
+  "okx.py|brokerId|b4b77abec7e9": {
+    "file": "okx.py",
+    "line": 6172,
+    "keyword": "brokerId",
+    "snippet": "params['clOrdId'] = brokerId + self.uuid16()"
+  },
+  "okx.py|brokerId|e49c6ddadd73": {
+    "file": "okx.py",
+    "line": 6173,
+    "keyword": "brokerId",
+    "snippet": "params['tag'] = brokerId"
+  },
+  "paradex.py|referral_code|ac086e80b2d7": {
+    "file": "paradex.py",
+    "line": 204,
+    "keyword": "referral_code",
+    "snippet": "'account/profile/referral_code': 1,"
+  },
+  "paradex.py|PARADEX-PARTNER|a45cae479278": {
+    "file": "paradex.py",
+    "line": 2541,
+    "keyword": "PARADEX-PARTNER",
+    "snippet": "'PARADEX-PARTNER': self.safe_string(self.options, 'broker', 'CCXT'),"
+  },
+  "phemex.py|brokerId|5e272cfbf873": {
+    "file": "phemex.py",
+    "line": 592,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'CCXT123456',  # updated from CCXT to CCXT123456"
+  },
+  "phemex.py|brokerId|9a970fca4c3d": {
+    "file": "phemex.py",
+    "line": 2599,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId', 'CCXT123456')"
+  },
+  "phemex.py|brokerId|9bc01f4a34b9": {
+    "file": "phemex.py",
+    "line": 2600,
+    "keyword": "brokerId",
+    "snippet": "if brokerId is not None:"
+  },
+  "phemex.py|brokerId|e7692e4d78fb": {
+    "file": "phemex.py",
+    "line": 2601,
+    "keyword": "brokerId",
+    "snippet": "request['clOrdID'] = brokerId + self.uuid16()"
+  },
+  "phemex.py|brokerId|0808c9c091f6": {
+    "file": "phemex.py",
+    "line": 4341,
+    "keyword": "brokerId",
+    "snippet": "id = self.safe_string(self.options, 'brokerId', 'CCXT123456')"
+  },
+  "tokocrypto.py|brokerId|d4754e368d9e": {
+    "file": "tokocrypto.py",
+    "line": 1715,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(broker, 'marketType')"
+  },
+  "tokocrypto.py|brokerId|9bc01f4a34b9": {
+    "file": "tokocrypto.py",
+    "line": 1716,
+    "keyword": "brokerId",
+    "snippet": "if brokerId is not None:"
+  },
+  "tokocrypto.py|brokerId|38bcc1fb061f": {
+    "file": "tokocrypto.py",
+    "line": 1717,
+    "keyword": "brokerId",
+    "snippet": "request['clientId'] = brokerId + self.uuid22()"
+  },
+  "whitebit.py|brokerId|03abdabd1f41": {
+    "file": "whitebit.py",
+    "line": 328,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'ccxt',"
+  },
+  "whitebit.py|brokerId|d1932c28b860": {
+    "file": "whitebit.py",
+    "line": 1821,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId')"
+  },
+  "whitebit.py|brokerId|9bc01f4a34b9": {
+    "file": "whitebit.py",
+    "line": 1822,
+    "keyword": "brokerId",
+    "snippet": "if brokerId is not None:"
+  },
+  "whitebit.py|brokerId|333ef0681eb7": {
+    "file": "whitebit.py",
+    "line": 1823,
+    "keyword": "brokerId",
+    "snippet": "request['clientOrderId'] = brokerId + self.uuid16()"
+  },
+  "woo.py|brokerId|74bbf97d36e7": {
+    "file": "woo.py",
+    "line": 380,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'bc830de7-50f3-460b-9ee0-f430f83f9dad',"
+  },
+  "woo.py|brokerId|68c7c85891c7": {
+    "file": "woo.py",
+    "line": 2985,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId', applicationId)"
+  },
+  "woo.py|brokerId|0b5b2097d01a": {
+    "file": "woo.py",
+    "line": 2988,
+    "keyword": "brokerId",
+    "snippet": "params['brokerId'] = brokerId"
+  },
+  "woo.py|brokerId|974dd40a599a": {
+    "file": "woo.py",
+    "line": 2990,
+    "keyword": "brokerId",
+    "snippet": "params['broker_id'] = brokerId"
+  },
+  "woo.py|broker_id|974dd40a599a": {
+    "file": "woo.py",
+    "line": 2990,
+    "keyword": "broker_id",
+    "snippet": "params['broker_id'] = brokerId"
+  },
+  "woofipro.py|broker_id|6ea36a5cc789": {
+    "file": "woofipro.py",
+    "line": 182,
+    "keyword": "broker_id",
+    "snippet": "'public/chain_info/{broker_id}': 1,"
+  },
+  "woofipro.py|brokerId|9c27a1ade366": {
+    "file": "woofipro.py",
+    "line": 327,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': 'CCXT',"
+  },
+  "woofipro.py|brokerId|77ff956fb70e": {
+    "file": "woofipro.py",
+    "line": 2493,
+    "keyword": "brokerId",
+    "snippet": "{'name': 'brokerId', 'type': 'string'},"
+  },
+  "woofipro.py|brokerId|0cb224168618": {
+    "file": "woofipro.py",
+    "line": 2503,
+    "keyword": "brokerId",
+    "snippet": "'brokerId': self.safe_string(self.options, 'keyBrokerId', 'woofi_pro'),"
+  },
+  "woofipro.py|brokerId|4e6eb27d648f": {
+    "file": "woofipro.py",
+    "line": 2793,
+    "keyword": "brokerId",
+    "snippet": "brokerId = self.safe_string(self.options, 'brokerId', 'CCXT')"
+  },
+  "woofipro.py|brokerId|a608c113e499": {
+    "file": "woofipro.py",
+    "line": 2797,
+    "keyword": "brokerId",
+    "snippet": "params['orders'][i]['order_tag'] = brokerId"
+  },
+  "woofipro.py|brokerId|33a860e82ad6": {
+    "file": "woofipro.py",
+    "line": 2799,
+    "keyword": "brokerId",
+    "snippet": "params['order_tag'] = brokerId"
+  }
+}
