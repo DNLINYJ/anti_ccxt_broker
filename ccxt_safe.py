@@ -108,6 +108,22 @@ SAFE_OVERRIDES: Dict[str, Dict[str, Any]] = {
         'broker': {},
     },
 
+    # binance 子交易所 — 继承同一套 broker 注入逻辑，必须同样覆盖
+    'binanceusdm': {
+        # USDⓈ-M 合约：sign() 中 safe_string(broker, 'future', defaultId)
+        #   → defaultId = 'x-cvBPrNm9'（hardcoded）
+        #   → 必须设 {} + 配合 clean clientOrderId
+        'broker': {},
+    },
+    'binancecoinm': {
+        # COIN-M 合约：同 binanceusdm 逻辑
+        'broker': {},
+    },
+    'binanceus': {
+        # Binance US：同 binance spot 逻辑
+        'broker': {},
+    },
+
     'bybit': {
         # sign(): safe_string(options, 'brokerId')
         #   → if brokerId is not None: headers['Referer'] = brokerId
@@ -667,6 +683,9 @@ def enable_audit(exchange, dry_run: bool = False, scrub: bool = True):
 
 _CLIENT_OID_KEY = {
     'okx': 'clOrdId', 'binance': 'newClientOrderId',
+    'binanceusdm': 'newClientOrderId',
+    'binancecoinm': 'newClientOrderId',
+    'binanceus': 'newClientOrderId',
     'phemex': 'clOrdID', 'coinex': 'client_id',
     'htx': 'client-order-id', 'bittrade': 'client-order-id',
     'whitebit': 'clientOrderId', 'coinbase': 'clientOrderId',
