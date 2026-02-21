@@ -558,7 +558,12 @@ def create_safe_exchange(exchange_id: str, *,
 # ============================================================================
 
 def _scan_for_suspects(headers: dict, body, exchange_id: str) -> List[Dict]:
-    """扫描 headers/body 中的可疑 broker 字段，返回发现列表"""
+    """扫描 headers/body 中的可疑 broker 字段，返回发现列表。
+
+    对 clientOrderId 类字段（_OID_BODY_KEYS）仅在 **值** 包含已知 broker
+    前缀时才报告；对纯归因字段（其余 SUSPECT_BODY_KEYS）只要 key 出现
+    即为可疑。
+    """
     findings = []
     if headers:
         for k, v in headers.items():
@@ -570,14 +575,50 @@ def _scan_for_suspects(headers: dict, body, exchange_id: str) -> List[Dict]:
                     })
     if body:
         body_str = body if isinstance(body, str) else json.dumps(body)
+        # 解析 body 中的 key=value 对（支持 URL-encoded 和 JSON）
+        body_values = _extract_body_values(body_str)
         for sk in SUSPECT_BODY_KEYS:
-            if sk in body_str:
-                findings.append({
-                    'type': 'body', 'key': sk,
-                    'snippet': body_str[:300], 'exchange': exchange_id,
-                })
-                break  # one finding per body is enough
+            if sk not in body_str:
+                continue
+            # OID 类字段：只在值包含已知 broker 前缀时报告
+            if sk in _OID_BODY_KEYS:
+                val = body_values.get(sk, '')
+                if not _value_has_broker_prefix(val):
+                    continue  # clean OID — 不报告
+            findings.append({
+                'type': 'body', 'key': sk,
+                'snippet': body_str[:300], 'exchange': exchange_id,
+            })
+            break  # one finding per body is enough
     return findings
+
+
+def _extract_body_values(body_str: str) -> Dict[str, str]:
+    """从 URL-encoded 或 JSON body 中提取 key→value 映射。"""
+    # 尝试 JSON
+    try:
+        obj = json.loads(body_str)
+        if isinstance(obj, dict):
+            return {k: str(v) for k, v in obj.items()}
+    except (json.JSONDecodeError, TypeError):
+        pass
+    # URL-encoded: key=value&key2=value2
+    result = {}
+    for pair in body_str.split('&'):
+        if '=' in pair:
+            k, _, v = pair.partition('=')
+            result[k] = v
+    return result
+
+
+def _value_has_broker_prefix(val: str) -> bool:
+    """检查值是否以已知 CCXT broker 标识开头。"""
+    if not val:
+        return False
+    for bv in KNOWN_BROKER_VALUES:
+        if val.startswith(bv):
+            return True
+    return False
 
 
 # Header keys to always delete (case-insensitive match)
